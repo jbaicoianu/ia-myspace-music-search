@@ -1,0 +1,95 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+<body>
+
+
+<style>
+body {
+  font-family: verdana,arial,sans-serif,helvetica;
+  background: #e5e5e5;
+}
+#wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+#header {
+  height: 100px;
+  background: #039;
+  color: white;
+  padding: 5px;
+  position: relative;
+}
+#header h1 {
+  font-size: 1.2em;
+  margin: 0;
+  text-shadow: 0 0 2px white;
+}
+#header h1::before {
+  background: url(https://web.archive.org/web/20080531202648im_/http://x.myspace.com/images/LogoDotcom.gif);
+  width: 34px;
+  display: inline-block;
+  height: 40px;
+  content: ' ';
+  vertical-align: middle;
+  float: left;
+}
+#header h2 {
+  font-size: .8em;
+  margin: 0;
+  margin-left: 8em;
+}
+#subheader {
+  background: #6698cb;
+  height: 28px;
+}
+#content {
+  background: white;
+  min-height: 500px;
+  padding: 12px;
+  font-size: 12px;
+}
+#footer {
+  text-align: center;
+  font-size: .7em;
+}
+iframe {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+}
+h4 {
+  font-size: 1.8em;
+  margin: .5em 0 0 0;
+  font-weight: normal;
+}
+h5.heading {
+  background: #B5CCFB;
+  height: 14px;
+  margin: 0;
+  padding: 5px;
+  font-weight: bold;
+}
+</style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/viewer.css">
+<script src="external/document-register-element.js"></script>
+<script src="src/viewer.js"></script>
+
+<div id="wrap">
+  <div id="header">
+    <h1>lostmyspace.com</h1>
+    <h2>a place for loss</h2>
+  </div>
+  <div id="subheader"></div>
+  <div id="content">
+    <h5 class="heading">Myspace Music</h5>
+    <p>From 2003 to 2012, Myspace was the premier place for bands to post their music.  In 2018, it lost it all in a botched server migration.  The Internet Archive has managed to get their hands on a collection of nearly half a million songs, and has made them available in a searchable interface.  Please enjoy exploring the collection below.</p>
+    <myspace-search metadata="https://baicoianu.com/~bai/ia/metadata.tsv"></myspace-search>
+
+  </div>
+  <div id="footer">All content hosted by the <a href="https://archive.org/">Internet Archive</a></div>
+</div>
